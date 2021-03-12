@@ -1,0 +1,37 @@
+npx tsc "file.ts" -> compiles TS to JS
+
+
+Theory:
+
+Browsers can't execute typescript; the typescript compiler compiles to regular JS
+
+Typescript adds type-checking at compile time; adds Interfaces, Generics and Decorators
+
+JS uses dynamic types that are resolved at runtime while TS uses static types that are
+resolved during compile time
+
+the "prop?" means that the parameter/prop is optional
+
+when using TS with React, if we do {} instead of props as an arg, we get access to all the
+props
+
+We can pass an interface or an object with "{}" as type
+
+"Interfaces" are better when you need to define a new object or method of an object.
+"Types" are better when we have a function that’s going to return an object called, type alias 
+is more recommended
+
+the keyword "type" is used as type aliases, we can create our own types
+
+in TS when we dont initialize a variable, just declare it, it's a good practice to assign 
+the type
+
+TS types -> number (all numbers); string; boolean; object ({key: type}); any shouldnt be used;
+Array (type[]); Tuple ([type, type]) with tuples TS can't detect errors for "push" method;
+Enum (enum Name {CONSTANT1, CONSTANT2, etc}); Union (type1 | type2); Literal (instead of a 
+type we assign a direct value); type OurCustomType = unions, literals or objects; void as a
+function return type (returns undefined); unknown (we need to first check the current type of
+the variable that is unknown if it matches the type of the variable we want to assign to the
+unknown variable); never (for throw Exception cases, or in general for functions that will
+never return a value)
+
